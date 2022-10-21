@@ -1,12 +1,12 @@
 <?= $this->extend("Layouts/default")?>
 
+<!-- Title Section -->
 <?= $this->section("title")?>
-    Home
+    Registration OK!
 <?= $this->endSection()?>
 
 
 <?= $this->section("content")?>
-    <h1>Home</h1>
-    <a href="<?=site_url("/signup/new") ?>">Register</a>
+    <h1>Signup</h1>
+    <p>Registration successful.</p>
 <?= $this->endSection()?>
-
