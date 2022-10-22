@@ -61,6 +61,12 @@
         </div>
     <?php endif ?>
 
+    <?php if(session()->has('error')):?>
+        <div class="alert alert-success" role="alert">
+            <?= session('error') ?>
+        </div>
+    <?php endif ?>
+
     <!-- Content Section -->
     <?= $this->renderSection("content") ?>
 
