@@ -14,9 +14,9 @@ class Login extends BaseController
         $email = $this->request->getPost('email');
         $password = $this->request->getPost('password');
 
-        $auth = new \App\Libraries\Authentication;
+        //$auth = new \App\Libraries\Authentication;
         
-        if($auth->login($email,$password)){
+        if(service('auth')->login($email,$password)){
             return redirect()->to("/")->with("info", 'Login successful');
         }else{
             return redirect()->back()->with('warning', 'Invalid login');
@@ -25,8 +25,8 @@ class Login extends BaseController
     
 
     public function delete(){        
-        $auth = new \App\Libraries\Authentication;
-        $auth->logout();
+        //$auth = new \App\Libraries\Authentication;
+        service('auth')->logout();
         return redirect()->to('/login/showLogoutMessage');
     }
 
