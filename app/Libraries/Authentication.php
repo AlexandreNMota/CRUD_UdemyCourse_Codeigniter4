@@ -2,6 +2,7 @@
 namespace App\Libraries;
 
 class Authentication{
+    private $user;
     public function login($email, $password){
         $model = new \App\Models\UserModel;
         // Model method findByEmail
@@ -31,8 +32,12 @@ class Authentication{
         if(! session()->has('user_id')){
             return null;
         }
-        $model = new \App\Models\UserModel;
 
-        return $model->find(session()->get('user_id'));
+        if($this->user === null){
+            $model = new \App\Models\UserModel;
+
+            $this->user = $model->find(session()->get('user_id'));
+        }
+        return $this->user;
     }
 }
