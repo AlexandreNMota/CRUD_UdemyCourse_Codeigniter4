@@ -7,6 +7,16 @@
 
 <?= $this->section("content")?>
     <h1>Home</h1>
-    <a href="<?=site_url("/signup/new") ?>">Register</a>
+    <div class="userSection">
+    <a href="<?=site_url("/signup") ?>">Register</a>
+    </div>    
+    <?php if(session()->has('user_id')):?>
+        <p>Hello, <?= esc(current_user()->name) ?></p>
+       
+        <a href="<?=site_url("/logout") ?>">Logout</a>
+    <?php else:?>
+        <p>User not logged in</p>
+        <a href="<?=site_url("/login") ?>">Login</a>
+    <?php endif;?>
 <?= $this->endSection()?>
 
