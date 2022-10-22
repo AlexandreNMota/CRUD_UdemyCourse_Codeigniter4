@@ -9,8 +9,9 @@
     <h1>Home</h1>
     <div class="userSection">
     <a href="<?=site_url("/signup") ?>">Register</a>
-    </div>    
-    <?php if(session()->has('user_id')):?>
+    </div>   
+    <!-- current_user vem do auth_helper--> 
+    <?php if(current_user()):?>
         <p>Hello, <?= esc(current_user()->name) ?></p>
        
         <a href="<?=site_url("/logout") ?>">Logout</a>

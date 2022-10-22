@@ -2,11 +2,8 @@
 
 if(! function_exists('current_user')){
     function current_user(){
-        if(! session()->has('user_id')){
-            return null;
-        }
-        $model = new \App\Models\UserModel;
+        $auth = new App\Libraries\Authentication;
 
-        return $model->find(session()->get('user_id'));
+        return $auth->getCurrentUser();
     }
 }
