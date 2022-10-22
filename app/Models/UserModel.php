@@ -43,4 +43,11 @@ class UserModel extends \CodeIgniter\Model{
         }
         return $data;
     }
+    // Query ti verify email
+    public function findByEmail($email){
+      return $this->where('email', $email)
+      ->first();
+    }
+
+    
 }

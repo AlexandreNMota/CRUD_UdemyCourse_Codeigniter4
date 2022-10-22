@@ -4,17 +4,16 @@ namespace App\Libraries;
 class Authentication{
     public function login($email, $password){
         $model = new \App\Models\UserModel;
-        // Query to find the user in the Database
-        $user = $model->where('email', $email)
-            ->first();
+        // Model method findByEmail
+        $user = $model->findByEmail($email);
 
         
         if($user === null){
 
             return false;
         }
-
-        if(! password_verify($password, $user->password_hash)){
+        //user entity method
+        if(! $user->verifyPassword($password)){
             return false;
         }
 
