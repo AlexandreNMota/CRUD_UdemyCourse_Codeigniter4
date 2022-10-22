@@ -5,19 +5,10 @@
 <?= $this->endSection()?>
 
 
-<?= $this->section("content")?>
-    <h1>Home</h1>
-    <div class="userSection">
-    <a href="<?=site_url("/signup") ?>">Register</a>
-    </div>   
+<?= $this->section("content")?>    
     <!-- current_user vem do auth_helper--> 
     <?php if(current_user()):?>
-        <p>Hello, <?= esc(current_user()->name) ?></p>
-       
-        <a href="<?=site_url("/logout") ?>">Logout</a>
-    <?php else:?>
-        <p>User not logged in</p>
-        <a href="<?=site_url("/login") ?>">Login</a>
+    <h1>Hello, <?= esc(current_user()->name) ?></h1>        
     <?php endif;?>
 <?= $this->endSection()?>
 

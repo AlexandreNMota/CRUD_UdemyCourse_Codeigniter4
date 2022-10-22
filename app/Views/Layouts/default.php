@@ -13,6 +13,9 @@
     <!-- Navigation BAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="<?= site_url("/home/index") ?>">Home</a>
+        
+        <?php if(current_user()):?>
+        <!-- Dropdown -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,9 +30,23 @@
                         <a class="dropdown-item" href="<?= site_url("/tasks/new") ?>">Create Task</a>                        
                     </div>
                 </li>
+                <!-- End of Dropdown -->
             </ul>
-        </div>
+            
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown"><a class="nav-link" href="<?=site_url("/logout") ?>">Logout</a></li>
+            </ul>
+        </div>   
+        <?php else:?>  
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto"> 
+                    <li class="nav-item dropdown"><a class="nav-link" href="<?=site_url("/signup") ?>">Register</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link" href="<?=site_url("/login") ?>">Login</a></li>
+                </ul>
+            </div>   
+        <?php endif;?>
     </nav>
+
 
     <!--Mensagens de aviso ou sucesso -->
     <?php if(session()->has('warning')):?>

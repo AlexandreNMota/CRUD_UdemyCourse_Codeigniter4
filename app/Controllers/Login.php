@@ -17,7 +17,11 @@ class Login extends BaseController
         //$auth = new \App\Libraries\Authentication;
         
         if(service('auth')->login($email,$password)){
-            return redirect()->to("/")->with("info", 'Login successful');
+            $redirect_url = session('redirect_url') ?? '/';
+
+            unset($_SESSION['redirect_url']);
+
+            return redirect()->to($redirect_url)->with("info", 'Login successful');
         }else{
             return redirect()->back()->with('warning', 'Invalid login');
         }        
