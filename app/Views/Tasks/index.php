@@ -11,15 +11,19 @@
     <h1>Tasks</h1>
 
     <a href="<?= site_url("/tasks/new") ?>">Create a new task</a>
-    <ul>
-        <?php foreach($tasks as $task):?>
-            <li>
-                <a href="<?= site_url("/tasks/show/" . $task->id) ?>">
-                    <?= esc($task->description)?>
-                </a>
-            </li>
-        <?php endforeach;?>
-    </ul>
+    <?php if($tasks):?>
+        <ul>
+            <?php foreach($tasks as $task):?>
+                <li>
+                    <a href="<?= site_url("/tasks/show/" . $task->id) ?>">
+                        <?= esc($task->description)?>
+                    </a>
+                </li>
+            <?php endforeach;?>
+        </ul>
+    <?php else: ?>
+        <p>No tasks found</p>
+    <?php endif ?>
 
 
 <?= $this->endSection()?>

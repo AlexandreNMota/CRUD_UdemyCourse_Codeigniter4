@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $this->renderSection("title") ?> - TaskApp</title>
-
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/945067ef7d.js" crossorigin="anonymous"></script>    
 </head>
 <body>
     <!-- Navigation BAR -->
@@ -51,19 +50,24 @@
     <!--Mensagens de aviso ou sucesso -->
     <?php if(session()->has('warning')):?>
         <div class="alert alert-danger" role="alert">
+        <button class='alert-danger'style="border-radius:100%; border: 0px; position:relative; float:right;"><i class="fa-sharp fa-solid fa-xmark"></i></button>
             <?= session('warning') ?>
+            <!--<button><i class="fa-sharp fa-solid fa-xmark"></i></button>-->
         </div>
     <?php endif ?>
     
     <?php if(session()->has('info')):?>
         <div class="alert alert-success" role="alert">
-            <?= session('info') ?>
-        </div>
+        <button class='alert-success'style="border-radius:100%; border: 0px; position:relative; float:right;"><i class="fa-sharp fa-solid fa-xmark"></i></button>            
+        <?= session('info') ?>
+            </div>
     <?php endif ?>
 
     <?php if(session()->has('error')):?>
         <div class="alert alert-success" role="alert">
+        <button class='alert-success'style="border-radius:100%; border: 0px; position:relative; float:right;"><i class="fa-sharp fa-solid fa-xmark"></i></button>
             <?= session('error') ?>
+            <!--<button><i class="fa-sharp fa-solid fa-xmark"></i></button>-->
         </div>
     <?php endif ?>
 
