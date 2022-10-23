@@ -14,10 +14,13 @@ class Tasks extends BaseController
     public function index()
     {
         
-        $data = $this->model->getTasksByUserId($this->current_user->id);
+        $data = $this->model->paginateTasksByUserId($this->current_user->id);
 
         
-        return view("Tasks/index", ['tasks' => $data]);
+        return view("Tasks/index", [
+            'tasks' => $data,
+            'pager' => $this->model->pager       
+        ]);
     }
 
     public function show($id){
