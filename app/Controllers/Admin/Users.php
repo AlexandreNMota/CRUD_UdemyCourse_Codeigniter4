@@ -8,13 +8,14 @@ class Users extends \App\Controllers\BaseController{
 
     public function __construct()
     {
-        $this->model = new \App\Models\UserModel;
+        $this->model = new \App\Models\UserModel;          // Carrega a model UserModel
     }
     
     
-    public function index(){   
-        $users = $this->model->orderBy('id')
-            ->paginate(5);
+    public function index(){   // /admin/users/
+        $users = $this->model                    // Carrega os dados da model ordenados pela id 
+            ->orderBy('id')
+            ->paginate(5);                       // 5 resultados por página
         
         return view('Admin/Users/index', [
             'users' => $users,
@@ -22,7 +23,7 @@ class Users extends \App\Controllers\BaseController{
         ]);
     }
 
-    public function show($id){
+    public function show($id){                   // /admin/users/show/$id
         $user = $this->getUserOr404($id);
         return view("Admin/Users/show", [
             'user'=> $user

@@ -25,6 +25,7 @@ class Filters extends BaseConfig
         'secureheaders' => SecureHeaders::class,
         'login' => \App\Filters\LoginFilter::class,
         'guest' => \App\Filters\GuestFilter::class,
+        'admin' => \App\Filters\AdminFilter::class,
     ];
 
     /**
@@ -70,7 +71,18 @@ class Filters extends BaseConfig
      *
      * @var array
      */
-    public $filters = [
-        'login'=> ['before'=>['tasks(/*)?']]
+    public $filters = [                          // Antes da página carregar aplica o filtro login
+        'login'=> [
+            'before'=>                           // requerindo que o user esteja logado p/ ver a pg
+                ['tasks(/*)?',
+                    'admin/*'                
+                ]
+        ],
+        'admin'=>[
+            'before' =>[
+                'admin/*'
+            ]
+        ]
+
 ];
 }
