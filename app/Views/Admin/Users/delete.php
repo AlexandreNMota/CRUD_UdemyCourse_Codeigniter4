@@ -10,8 +10,8 @@
 
 <?= form_open("/admin/users/delete/" . $user->id) ?>
 
-    <button>Yes</button>
-    <a href="<?= site_url('/admin/users/show/' . $user->id) ?>">Cancel</a>
+    <button class="btn">Yes</button>
+    <a class="btn " href="<?= site_url('/admin/users/show/' . $user->id) ?>">Cancel</a>
     
 </form>
 

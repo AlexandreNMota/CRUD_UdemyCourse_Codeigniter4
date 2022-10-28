@@ -17,6 +17,7 @@
                 <tr>
                     <th scope="col">Name</th>
                     <th scope="col">Email</th>
+                    <th scope="col">Administrator</th>
                     <th scope="col">Created at</th>
                 </tr>
             </thead>
@@ -30,6 +31,9 @@
                         </td>
                         <td>
                         <?= esc($user->email)?>
+                        </td>
+                        <td>
+                        <?= $user->is_admin ? 'yes' : 'no'?>
                         </td>
                         <td>
                         <?= esc($user->created_at)?>

@@ -43,10 +43,11 @@ class Users extends \App\Controllers\BaseController{
         
         
 
-        if($this->model->insert($user)){
+        if($this->model->protect(false)
+            ->insert($user)){
             
-            return redirect()->to("/admin/users/show/{$this->model->insertID}")
-							 ->with('info', 'User created successfully');
+                return redirect()->to("/admin/users/show/{$this->model->insertID}")
+                                ->with('info', 'User created successfully');
         }else{
             
             return redirect()->back()
@@ -84,7 +85,7 @@ class Users extends \App\Controllers\BaseController{
             ->withInput();
         }
 
-        if($this->model->save($user)){        
+        if($this->model->protect(false)->save($user)){        
             return redirect()->to("/admin/users/show/$id")
                          ->with('info', 'Task updated successfully');
         }

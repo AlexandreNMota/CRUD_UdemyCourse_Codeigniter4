@@ -30,6 +30,9 @@
                     </div>
                 </li>
                 <!-- End of Dropdown -->
+                <?php if(current_user()->is_admin):?>
+                    <li class="nav-item"><a href="<?= site_url("/admin/users")?>" class="nav-link">Users</a></li>
+                <?php endif;?>
             </ul>
             
             <ul class="navbar-nav ml-auto">
