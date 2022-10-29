@@ -53,23 +53,23 @@
     <!--Mensagens de aviso ou sucesso -->
     <?php if(session()->has('warning')):?>
         <div class="alert alert-danger" role="alert">
-        <button class='alert-danger'style="border-radius:100%; border: 0px; position:relative; float:right;"><i class="fa-sharp fa-solid fa-xmark"></i></button>
-            <?= session('warning') ?>
+            <button class='alert-danger alert-button close'style="border-radius:100%; border: 0px; position:relative; float:right;"><i class="fa-sharp fa-solid fa-xmark"></i></button>
+                <?= session('warning') ?>
             <!--<button><i class="fa-sharp fa-solid fa-xmark"></i></button>-->
         </div>
     <?php endif ?>
     
     <?php if(session()->has('info')):?>
         <div class="alert alert-success" role="alert">
-        <button class='alert-success'style="border-radius:100%; border: 0px; position:relative; float:right;"><i class="fa-sharp fa-solid fa-xmark"></i></button>            
-        <?= session('info') ?>
-            </div>
+            <button class='alert-success alert-button close' style="border-radius:100%; border: 0px; position:relative; float:right;"><i class="fa-sharp fa-solid fa-xmark"></i></button>            
+                <?= session('info') ?>
+        </div>
     <?php endif ?>
 
     <?php if(session()->has('error')):?>
         <div class="alert alert-success" role="alert">
-        <button class='alert-success'style="border-radius:100%; border: 0px; position:relative; float:right;"><i class="fa-sharp fa-solid fa-xmark"></i></button>
-            <?= session('error') ?>
+            <button class='alert-success alert-button close'style="border-radius:100%; border: 0px; position:relative; float:right;"><i class="fa-sharp fa-solid fa-xmark"></i></button>
+                    <?= session('error') ?>
             <!--<button><i class="fa-sharp fa-solid fa-xmark"></i></button>-->
         </div>
     <?php endif ?>
@@ -78,6 +78,25 @@
     <?= $this->renderSection("content") ?>
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <script>
+        
+        
+        
+        $(document).ready(function($){
+            
+            
+            $(".close").click(function(event){
+                $(".alert").fadeOut(2000);
+            });
+
+
+        });
+    </script>
+
+
+    
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

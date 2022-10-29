@@ -30,7 +30,7 @@ class Users extends \App\Controllers\BaseController{
         ]);        
     }
 
-    public function new(){
+    public function new(){   
         
         $user = new User;
         return view('Admin/Users/new',[
@@ -39,7 +39,7 @@ class Users extends \App\Controllers\BaseController{
     }
 
     public function create(){       
-        $user = new User($this->request->getPost());            
+        $user = new User($this->request->getPost());   // new User with data from post request         
         
         
 
@@ -118,7 +118,7 @@ class Users extends \App\Controllers\BaseController{
         $user = $this->model->where('id', $id)->first();
 
         if($user === null){
-            throw new \CodeIgniter\Exceptions\PageNotFoundException("Task with id $id not found");
+            throw new \CodeIgniter\Exceptions\PageNotFoundException("User with id $id not found");
         }
         return $user;
     }
