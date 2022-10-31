@@ -10,5 +10,6 @@
     <?php if(current_user()):?>
     <h1>Hello, <?= esc(current_user()->name) ?></h1>        
     <?php endif;?>
+    <p>Teste</p>
 <?= $this->endSection()?>
 
