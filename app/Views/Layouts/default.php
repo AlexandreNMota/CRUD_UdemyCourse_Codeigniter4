@@ -6,7 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $this->renderSection("title") ?> - TaskApp</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+        
     <script src="https://kit.fontawesome.com/945067ef7d.js" crossorigin="anonymous"></script>    
+
+    <style>
+        :root{
+            --primary: #C09CDB;
+            --secondary: #EE49C9;
+            --mygray: #f8f9fa;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Oswald', sans-serif;
+        }
+        ul{
+            list-style-type: none;
+        }
+
+        .navbar{
+            background-image: linear-gradient(var(--primary), var(--mygray));
+        }  
+        
+        .container{
+            height: 81vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  
+            align-items: center;          
+        }
+
+        .loginSection, .newTask, .contentSection{
+            width: 300px;              
+            display: flex;   
+            flex-direction: column;         
+            
+        }   
+        .loginHeader, .newTaskHeader, .contentHeader{
+            display: flex;
+            justify-content: space-between;  
+            background-image: linear-gradient(45deg,var(--primary), var(--mygray));         
+            border-radius: 25px 25px 0 0;
+        }  
+        .newTaskHeader, .contentHeader{
+            justify-content: center;
+        }
+        .newTaskForm{
+            margin-top: 20px;
+            padding: 10px;
+        }
+        
+        .mainSection, .newTaskForm{
+            display: flex;
+            flex-direction: column;
+            border-bottom: 1px solid var(--mygray);
+            border-left: 1px solid var(--mygray);
+            border-right: 1px solid var(--mygray);
+            border-radius: 0px 0px 25px 25px;
+        }
+
+        .mainSection ul {            
+            margin: 5px;                   
+        }
+
+        .addTaskLink{    
+            float: left;        
+            width: 50px;
+            border-radius: 50%;            
+        }
+        
+        
+        .close:focus{
+            outline : none;
+        }
+
+
+        
+    </style>
+
+
 </head>
 <body>
     <!-- Navigation BAR -->
@@ -75,7 +158,9 @@
     <?php endif ?>
 
     <!-- Content Section -->
-    <?= $this->renderSection("content") ?>
+    <div class="container">
+        <?= $this->renderSection("content") ?>
+    </div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -88,7 +173,7 @@
             
             
             $(".close").click(function(event){
-                $(".alert").fadeOut(2000);
+                $(".alert").fadeOut(2000);                
             });
 
 

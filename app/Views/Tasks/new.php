@@ -8,23 +8,33 @@
 <!-- Content Section-->
 <?= $this->section("content")?>
     
-    <h1>New Task</h1>
+    <div class="newTask">
+        <div class="newTaskHeader">
+            <h1>New Task</h1>
+        </div>
 
-    <?php if(session()->has('errors')):?>
-        <ul>
-            <?php foreach(session('errors') as $error): ?>
-                <li><?= $error ?></li>
-            <?php endforeach;?>
-        </ul>
-    <?php endif ?>
+        <div class="newTaskerror">
+            <?php if(session()->has('errors')):?>
+                <ul>
+                    <?php foreach(session('errors') as $error): ?>
+                        <li><?= $error ?></li>
+                    <?php endforeach;?>
+                </ul>
+            <?php endif ?>
+        </div>
+        <div class="newTaskForm">
+        <!-- Creation Form  -->
+            <?= form_open("/tasks/create") ?>
+                
+                <?= $this->include('Tasks/form') ?>
+                
+                <div class="buttonsForm" style="display: flex; justify-content: right;">
+                    <button class="btn" style="padding:1px;">Save</button>
+                    <a class="btn" href="<?= site_url("/tasks") ?>">Cancel</a>
+                </div>
 
-    <!-- Creation Form  -->
-    <?= form_open("/tasks/create") ?>
-        
-        <?= $this->include('Tasks/form') ?>
-        <button>Save</button>
-        <a href="<?= site_url("/tasks") ?>">Cancel</a>
-
-    </form>
+            </form>
+        </div>
+    </div>
 
     <?= $this->endSection()?>
