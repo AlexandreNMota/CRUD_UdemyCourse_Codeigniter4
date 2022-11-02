@@ -17,7 +17,8 @@ class UserSeeder extends Seeder
             'name' => 'Admin',
             'email' => 'admin@admin.com',
             'password'=> 'adminadmin',
-            'is_admin' => true
+            'is_admin' => true,
+            'is_active'=>true,
         ];
 
         $model                                   
