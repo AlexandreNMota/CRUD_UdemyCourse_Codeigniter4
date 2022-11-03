@@ -47,21 +47,21 @@ class Email extends BaseConfig
      *
      * @var string
      */
-    public $SMTPHost = "smtp.mailgun.org";
+    public $SMTPHost = "";
 
     /**
      * SMTP Username
      *
      * @var string
      */
-    public $SMTPUser = "alexandremota@sandboxffc0efe16fe3498381b859bab896c8f5.mailgun.org";
+    public $SMTPUser = "";
 
     /**
      * SMTP Password
      *
      * @var string
      */
-    public $SMTPPass = "ed1614c3ece6b5aae1068d195246ebf4-31eedc68-a707b01d";
+    public $SMTPPass = "";
 
     /**
      * SMTP Port
