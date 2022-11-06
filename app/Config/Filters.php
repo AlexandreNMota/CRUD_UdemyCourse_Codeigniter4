@@ -76,7 +76,8 @@ class Filters extends BaseConfig
             'before' =>                           // requerindo que o user esteja logado p/ ver a pg
             [
                 'tasks(/*)?',
-                'admin/*'
+                'admin/*',
+                'profile/*'
             ]
         ],
         'admin' => [
