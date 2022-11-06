@@ -2,12 +2,17 @@
 
 namespace App\Models;
 
+use App\Libraries\Token;
+
 class UserModel extends \CodeIgniter\Model
 {
 
   protected $table = 'user';
 
-  protected $allowedFields = ['name', 'email', 'password', 'activation_hash'];
+  protected $allowedFields = [
+    'name', 'email', 'password', 'activation_hash', 'reset_hash',
+    'reset_expires_at'
+  ];
 
   protected $returnType = 'App\Entities\User';
 
@@ -44,9 +49,10 @@ class UserModel extends \CodeIgniter\Model
       unset($data['data']['password']);
       unset($data['data']['password_confirmation']);
     }
+
     return $data;
   }
-  // Query ti verify email
+
   public function findByEmail($email)
   {
     return $this->where('email', $email)
@@ -61,13 +67,39 @@ class UserModel extends \CodeIgniter\Model
 
   public function activateByToken($token)
   {
-    $token_hash = hash_hmac('sha256', $token, $_ENV['HASH_SECRET_KEY']);
+    $token = new Token($token);
+
+    $token_hash = $token->getHash();
+
     $user = $this->where('activation_hash', $token_hash)
       ->first();
 
     if ($user !== null) {
+
       $user->activate();
-      $this->protect(false)->save($user);
+
+      $this->protect(false)
+        ->save($user);
     }
+  }
+
+  public function getUserForPasswordReset($token)
+  {
+    $token = new Token($token);
+
+    $token_hash = $token->getHash();
+
+    $user = $this->where('reset_hash', $token_hash)
+      ->first();
+
+    if ($user) {
+
+      if ($user->reset_expires_at < date('Y-m-d H:i:s')) {
+
+        $user = null;
+      }
+    }
+
+    return $user;
   }
 }

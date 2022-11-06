@@ -37,7 +37,7 @@ class Filters extends BaseConfig
     public $globals = [
         'before' => [
             // 'honeypot',
-             'csrf', 
+            'csrf',
             // 'invalidchars',
         ],
         'after' => [
@@ -72,17 +72,24 @@ class Filters extends BaseConfig
      * @var array
      */
     public $filters = [                          // Antes da página carregar aplica o filtro login
-        'login'=> [
-            'before'=>                           // requerindo que o user esteja logado p/ ver a pg
-                ['tasks(/*)?',
-                    'admin/*'                
-                ]
-        ],
-        'admin'=>[
-            'before' =>[
+        'login' => [
+            'before' =>                           // requerindo que o user esteja logado p/ ver a pg
+            [
+                'tasks(/*)?',
                 'admin/*'
+            ]
+        ],
+        'admin' => [
+            'before' => [
+                'admin/*'
+            ]
+        ],
+
+        'guest' => [
+            'before' => [
+                'password/*'
             ]
         ]
 
-];
+    ];
 }
