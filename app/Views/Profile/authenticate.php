@@ -15,24 +15,19 @@
             <?php endforeach; ?>
         </ul>
         <?php endif ?>
+        <p>Please enter your password to continue</p>
     </div>
     <div class="newTaskForm">
-        <?= form_open("/profile/update") ?>
+        <?= form_open("/profile/processauthenticate") ?>
 
         <div>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" value="<?= old('name', esc($user->name)) ?>"
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password"
                 style="width:200px; border-radius:20px; text-indent: 10px;">
         </div>
 
-        <div>
-            <label for="email">Email</label>
-            <input type="text" name="email" id="email" value="<?= old('email', esc($user->email)) ?>"
-                style="width:200px;border-radius:20px; text-indent: 10px;">
-        </div>
-
         <div class="buttonsForm" style="display: flex; justify-content: right;">
-            <button class="btn">Save</button>
+            <button class="btn">Send</button>
             <a href="<?= site_url("/profile/show") ?>" class="btn">Cancel</a>
         </div>
 

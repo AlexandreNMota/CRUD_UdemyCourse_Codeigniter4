@@ -18,4 +18,5 @@ Profile
     <dd><?= esc($user->email) ?></dd>
 </dl>
 <a href="<?= site_url("/profile/edit") ?>" class="btn btn-block">Edit</a>
+<a href="<?= site_url("/profile/editPassword") ?>" class="btn btn-block">Change password</a>
 <?= $this->endSection() ?>
