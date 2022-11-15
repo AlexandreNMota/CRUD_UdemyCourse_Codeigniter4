@@ -77,7 +77,8 @@ class Filters extends BaseConfig
             [
                 'tasks(/*)?',
                 'admin/*',
-                'profile/*'
+                'profile/*',
+                'profileimage/*'
             ]
         ],
         'admin' => [
