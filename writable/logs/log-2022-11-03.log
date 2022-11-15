@@ -1,0 +1,6 @@
+CRITICAL - 2022-11-03 17:43:42 --> Too few arguments to function App\Controllers\Signup::activate(), 0 passed in C:\Users\nicol\Desktop\udemycdicourse\taskapp\vendor\codeigniter4\framework\system\CodeIgniter.php on line 902 and exactly 1 expected
+in APPPATH\Controllers\Signup.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Signup->activate()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

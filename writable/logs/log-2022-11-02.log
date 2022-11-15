@@ -1,0 +1,120 @@
+ERROR - 2022-11-02 06:42:30 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-02 06:42:30 --> 220 Mailgun Influx ready
+
+hello: 250-28f519c7b827
+250-AUTH PLAIN LOGIN
+250-SIZE 52428800
+250-8BITMIME
+250-SMTPUTF8
+250-PIPELINING
+250 STARTTLS
+
+starttls: 220 Go ahead
+
+hello: 250-28f519c7b827
+250-AUTH PLAIN LOGIN
+250-SIZE 52428800
+250-8BITMIME
+250-SMTPUTF8
+250 PIPELINING
+
+from: 250 Sender address accepted
+
+to: 250 Recipient address accepted
+
+data: 421 Domain sandboxffc0efe16fe3498381b859bab896c8f5.mailgun.org is not allowed to send: Sandbox subdomains are for test purposes only. Please add your own domain or add the address to authorized recipients in Account Settings.
+
+The following SMTP error was encountered: 421 Domain sandboxffc0efe16fe3498381b859bab896c8f5.mailgun.org is not allowed to send: Sandbox subdomains are for test purposes only. Please add your own domain or add the address to authorized recipients in Account Settings.
+
+quit: 221 See you later. Yours truly, Mailgun
+
+ERROR - 2022-11-02 06:52:13 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-02 06:52:13 --> 220 Mailgun Influx ready
+
+hello: 250-28f519c7b827
+250-AUTH PLAIN LOGIN
+250-SIZE 52428800
+250-8BITMIME
+250-SMTPUTF8
+250-PIPELINING
+250 STARTTLS
+
+starttls: 220 Go ahead
+
+hello: 250-28f519c7b827
+250-AUTH PLAIN LOGIN
+250-SIZE 52428800
+250-8BITMIME
+250-SMTPUTF8
+250 PIPELINING
+
+from: 250 Sender address accepted
+
+to: 250 Recipient address accepted
+
+data: 421 Domain sandboxffc0efe16fe3498381b859bab896c8f5.mailgun.org is not allowed to send: Sandbox subdomains are for test purposes only. Please add your own domain or add the address to authorized recipients in Account Settings.
+
+The following SMTP error was encountered: 421 Domain sandboxffc0efe16fe3498381b859bab896c8f5.mailgun.org is not allowed to send: Sandbox subdomains are for test purposes only. Please add your own domain or add the address to authorized recipients in Account Settings.
+
+quit: 221 See you later. Yours truly, Mailgun
+
+ERROR - 2022-11-02 06:53:07 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-02 06:53:07 --> 220 Mailgun Influx ready
+
+hello: 250-28f519c7b827
+250-AUTH PLAIN LOGIN
+250-SIZE 52428800
+250-8BITMIME
+250-SMTPUTF8
+250-PIPELINING
+250 STARTTLS
+
+starttls: 220 Go ahead
+
+hello: 250-28f519c7b827
+250-AUTH PLAIN LOGIN
+250-SIZE 52428800
+250-8BITMIME
+250-SMTPUTF8
+250 PIPELINING
+
+from: 250 Sender address accepted
+
+to: 250 Recipient address accepted
+
+data: 421 Domain sandboxffc0efe16fe3498381b859bab896c8f5.mailgun.org is not allowed to send: Sandbox subdomains are for test purposes only. Please add your own domain or add the address to authorized recipients in Account Settings.
+
+The following SMTP error was encountered: 421 Domain sandboxffc0efe16fe3498381b859bab896c8f5.mailgun.org is not allowed to send: Sandbox subdomains are for test purposes only. Please add your own domain or add the address to authorized recipients in Account Settings.
+
+quit: 221 See you later. Yours truly, Mailgun
+
+ERROR - 2022-11-02 06:54:29 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-02 06:54:29 --> 220 Mailgun Influx ready
+
+hello: 250-28f519c7b827
+250-AUTH PLAIN LOGIN
+250-SIZE 52428800
+250-8BITMIME
+250-SMTPUTF8
+250-PIPELINING
+250 STARTTLS
+
+starttls: 220 Go ahead
+
+hello: 250-28f519c7b827
+250-AUTH PLAIN LOGIN
+250-SIZE 52428800
+250-8BITMIME
+250-SMTPUTF8
+250 PIPELINING
+
+from: 250 Sender address accepted
+
+to: 250 Recipient address accepted
+
+data: 421 Domain sandboxffc0efe16fe3498381b859bab896c8f5.mailgun.org is not allowed to send: Sandbox subdomains are for test purposes only. Please add your own domain or add the address to authorized recipients in Account Settings.
+
+The following SMTP error was encountered: 421 Domain sandboxffc0efe16fe3498381b859bab896c8f5.mailgun.org is not allowed to send: Sandbox subdomains are for test purposes only. Please add your own domain or add the address to authorized recipients in Account Settings.
+
+quit: 221 See you later. Yours truly, Mailgun
+

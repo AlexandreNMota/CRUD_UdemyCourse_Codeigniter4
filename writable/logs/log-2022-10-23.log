@@ -1,0 +1,46 @@
+CRITICAL - 2022-10-23 08:55:51 --> Undefined variable $task
+in APPPATH\Views\Admin\Users\show.php on line 21.
+ 1 APPPATH\Views\Admin\Users\show.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $task', 'APPPATH\\Views\\Admin\\Users\\show.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\Users\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Admin/Users/show', [], true)
+ 5 APPPATH\Controllers\Admin\Users.php(27): view('Admin/Users/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Admin\Users->show('4')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Users))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-23 09:29:36 --> mysqli_sql_exception: Unknown column 'password' in 'field list' in C:\Users\nicol\Desktop\udemycdicourse\taskapp\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\nicol\Desktop\udemycdicourse\taskapp\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `user` S...', 0)
+#1 C:\Users\nicol\Desktop\udemycdicourse\taskapp\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `user` S...')
+#2 C:\Users\nicol\Desktop\udemycdicourse\taskapp\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `user` S...')
+#3 C:\Users\nicol\Desktop\udemycdicourse\taskapp\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `user` S...', Array, false)
+#4 C:\Users\nicol\Desktop\udemycdicourse\taskapp\vendor\codeigniter4\framework\system\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\Users\nicol\Desktop\udemycdicourse\taskapp\vendor\codeigniter4\framework\system\BaseModel.php(885): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\Users\nicol\Desktop\udemycdicourse\taskapp\vendor\codeigniter4\framework\system\Model.php(693): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\Users\nicol\Desktop\udemycdicourse\taskapp\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->update('9', Object(App\Entities\User))
+#8 C:\Users\nicol\Desktop\udemycdicourse\taskapp\app\Controllers\Admin\Users.php(86): CodeIgniter\BaseModel->save(Object(App\Entities\User))
+#9 C:\Users\nicol\Desktop\udemycdicourse\taskapp\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\Admin\Users->update('9')
+#10 C:\Users\nicol\Desktop\udemycdicourse\taskapp\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Users))
+#11 C:\Users\nicol\Desktop\udemycdicourse\taskapp\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\nicol\Desktop\udemycdicourse\taskapp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-10-23 09:29:37 --> Unknown column 'password' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `user` SET `password` = \'123456\', `updated_at` = \'2022-10-23 09:29:36\'
+WHERE `user`.`id` IN (\'9\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `user` SET `password` = \'123456\', `updated_at` = \'2022-10-23 09:29:36\'
+WHERE `user`.`id` IN (\'9\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `user` SET `password` = \'123456\', `updated_at` = \'2022-10-23 09:29:36\'
+WHERE `user`.`id` IN (\'9\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `user` SET `password` = :password:, `updated_at` = :updated_at:
+WHERE `user`.`id` IN :user.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(885): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], [...])
+ 8 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->update('9', Object(App\Entities\User))
+ 9 APPPATH\Controllers\Admin\Users.php(86): CodeIgniter\BaseModel->save(Object(App\Entities\User))
+10 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Admin\Users->update('9')
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Users))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

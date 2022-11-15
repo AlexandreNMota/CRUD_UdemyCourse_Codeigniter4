@@ -1,0 +1,5 @@
+CRITICAL - 2022-11-04 00:27:35 --> date_default_timezone_set(): Timezone ID 'America/brasilia' is invalid
+in SYSTEMPATH\CodeIgniter.php on line 184.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'date_default_timezone_set(): Timezone ID \'America/brasilia\' is invalid', 'SYSTEMPATH\\CodeIgniter.php', 184)
+ 2 SYSTEMPATH\CodeIgniter.php(184): date_default_timezone_set('America/brasilia')
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()

@@ -1,0 +1,27 @@
+CRITICAL - 2022-11-06 17:59:16 --> Invalid file: Password/reset_sucess.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Password/reset_sucess.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Password/reset_sucess', [], true)
+ 3 APPPATH\Controllers\Password.php(78): view('Password/reset_sucess')
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Password->resetSucces()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Password))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 17:59:35 --> Invalid file: Password/reset_success.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Password/reset_success.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Password/reset_success', [], true)
+ 3 APPPATH\Controllers\Password.php(78): view('Password/reset_success')
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Password->resetSucces()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Password))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 17:59:54 --> Invalid file: Password/reset_success.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Password/reset_success.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Password/reset_success', [], true)
+ 3 APPPATH\Controllers\Password.php(78): view('Password/reset_success')
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Password->resetSucces()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Password))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

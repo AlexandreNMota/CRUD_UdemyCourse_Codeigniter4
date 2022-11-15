@@ -1,0 +1,334 @@
+ERROR - 2022-11-01 20:04:04 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-01 20:04:04 --> 220 smtp.gmail.com ESMTP m33-20020a056870562100b0012779ba00fesm5409432oao.2 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:1284:f019:4d4a:3ca1:176c:2750:e282]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2001:1284:f019:4d4a:3ca1:176c:2750:e282]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor m33-20020a056870562100b0012779ba00fesm5409432oao.2 - gsmtp
+
+ERROR - 2022-11-01 20:04:37 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-01 20:04:37 --> 220 smtp.gmail.com ESMTP v24-20020a544498000000b00359a9663053sm3980853oiv.4 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:1284:f019:4d4a:3ca1:176c:2750:e282]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2001:1284:f019:4d4a:3ca1:176c:2750:e282]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials v24-20020a544498000000b00359a9663053sm3980853oiv.4 - gsmtp
+
+ERROR - 2022-11-01 20:08:40 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-01 20:08:40 --> 220 smtp.gmail.com ESMTP k12-20020a056820016c00b0049a96a62a3bsm3100175ood.48 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:1284:f019:4d4a:3ca1:176c:2750:e282]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2001:1284:f019:4d4a:3ca1:176c:2750:e282]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor k12-20020a056820016c00b0049a96a62a3bsm3100175ood.48 - gsmtp
+
+ERROR - 2022-11-01 20:13:31 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-01 20:13:31 --> 220 smtp.gmail.com ESMTP t27-20020a05683022fb00b00667d9a866b0sm4474207otc.59 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:1284:f019:4d4a:3ca1:176c:2750:e282]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2001:1284:f019:4d4a:3ca1:176c:2750:e282]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials t27-20020a05683022fb00b00667d9a866b0sm4474207otc.59 - gsmtp
+
+ERROR - 2022-11-01 20:15:21 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-01 20:15:21 --> 220 smtp.gmail.com ESMTP t8-20020a4aadc8000000b00480e77f90f9sm3962477oon.41 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:1284:f019:4d4a:3ca1:176c:2750:e282]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2001:1284:f019:4d4a:3ca1:176c:2750:e282]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials t8-20020a4aadc8000000b00480e77f90f9sm3962477oon.41 - gsmtp
+
+ERROR - 2022-11-01 20:15:27 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-01 20:15:27 --> 220 smtp.gmail.com ESMTP y13-20020a056830208d00b0066c44b4f2d6sm4077138otq.43 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:1284:f019:4d4a:3ca1:176c:2750:e282]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2001:1284:f019:4d4a:3ca1:176c:2750:e282]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials y13-20020a056830208d00b0066c44b4f2d6sm4077138otq.43 - gsmtp
+
+ERROR - 2022-11-01 20:16:44 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-01 20:16:44 --> 220 smtp.gmail.com ESMTP v20-20020a9d69d4000000b00661a1a48079sm4462183oto.7 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:1284:f019:4d4a:3ca1:176c:2750:e282]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2001:1284:f019:4d4a:3ca1:176c:2750:e282]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials v20-20020a9d69d4000000b00661a1a48079sm4462183oto.7 - gsmtp
+
+ERROR - 2022-11-01 20:20:59 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-01 20:20:59 --> 220 smtp.gmail.com ESMTP 62-20020aca0741000000b00359ccf7748dsm4040983oih.56 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:1284:f019:4d4a:3ca1:176c:2750:e282]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2001:1284:f019:4d4a:3ca1:176c:2750:e282]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 62-20020aca0741000000b00359ccf7748dsm4040983oih.56 - gsmtp
+
+ERROR - 2022-11-01 20:22:18 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-01 20:22:18 --> 220 smtp.gmail.com ESMTP i4-20020a056808030400b00359af7ea8fdsm4069190oie.34 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:1284:f019:4d4a:3ca1:176c:2750:e282]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2001:1284:f019:4d4a:3ca1:176c:2750:e282]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials i4-20020a056808030400b00359af7ea8fdsm4069190oie.34 - gsmtp
+
+ERROR - 2022-11-01 20:22:26 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-01 20:22:26 --> 220 smtp.gmail.com ESMTP j19-20020a9d7393000000b0063b24357269sm4503120otk.13 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:1284:f019:4d4a:3ca1:176c:2750:e282]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2001:1284:f019:4d4a:3ca1:176c:2750:e282]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials j19-20020a9d7393000000b0063b24357269sm4503120otk.13 - gsmtp
+
+ERROR - 2022-11-01 20:27:15 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-01 20:27:15 --> 220 Mailgun Influx ready
+
+hello: 250-02f1d204295e
+250-AUTH PLAIN LOGIN
+250-SIZE 52428800
+250-8BITMIME
+250-SMTPUTF8
+250-PIPELINING
+250 STARTTLS
+
+starttls: 220 Go ahead
+
+hello: 250-02f1d204295e
+250-AUTH PLAIN LOGIN
+250-SIZE 52428800
+250-8BITMIME
+250-SMTPUTF8
+250 PIPELINING
+
+from: 250 Sender address accepted
+
+to: 250 Recipient address accepted
+
+data: 421 Domain sandboxffc0efe16fe3498381b859bab896c8f5.mailgun.org is not allowed to send: Sandbox subdomains are for test purposes only. Please add your own domain or add the address to authorized recipients in Account Settings.
+
+The following SMTP error was encountered: 421 Domain sandboxffc0efe16fe3498381b859bab896c8f5.mailgun.org is not allowed to send: Sandbox subdomains are for test purposes only. Please add your own domain or add the address to authorized recipients in Account Settings.
+
+quit: 221 See you later. Yours truly, Mailgun
+
+ERROR - 2022-11-01 20:28:20 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-01 20:28:20 --> 220 Mailgun Influx ready
+
+hello: 250-a2687808e7ae
+250-AUTH PLAIN LOGIN
+250-SIZE 52428800
+250-8BITMIME
+250-SMTPUTF8
+250-PIPELINING
+250 STARTTLS
+
+starttls: 220 Go ahead
+
+hello: 250-a2687808e7ae
+250-AUTH PLAIN LOGIN
+250-SIZE 52428800
+250-8BITMIME
+250-SMTPUTF8
+250 PIPELINING
+
+Failed to authenticate password. Error: 535 Authentication failed
+
+ERROR - 2022-11-01 20:29:22 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-01 20:29:22 --> 220 Mailgun Influx ready
+
+hello: 250-a51f83e179eb
+250-AUTH PLAIN LOGIN
+250-SIZE 52428800
+250-8BITMIME
+250-SMTPUTF8
+250-PIPELINING
+250 STARTTLS
+
+starttls: 220 Go ahead
+
+hello: 250-a51f83e179eb
+250-AUTH PLAIN LOGIN
+250-SIZE 52428800
+250-8BITMIME
+250-SMTPUTF8
+250 PIPELINING
+
+Failed to authenticate password. Error: 535 Authentication failed
+

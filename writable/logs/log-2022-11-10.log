@@ -1,0 +1,9 @@
+CRITICAL - 2022-11-10 20:04:16 --> password_verify(): Passing null to parameter #1 ($password) of type string is deprecated
+in APPPATH\Entities\User.php on line 11.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'password_verify(): Passing null to parameter #1 ($password) of type string is deprecated', 'APPPATH\\Entities\\User.php', 11)
+ 2 APPPATH\Entities\User.php(11): password_verify(null, '$2y$10$rQBi1IQM8O2jq9FV7owjBeLZxCA2tOLVsO4RyugtLiMpgKcyGeUly')
+ 3 APPPATH\Controllers\Profile.php(94): App\Entities\User->verifyPassword(null)
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Profile->processauthenticate()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
