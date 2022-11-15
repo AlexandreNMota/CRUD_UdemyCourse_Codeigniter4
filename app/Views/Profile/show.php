@@ -9,6 +9,13 @@ Profile
 <?= $this->section("content") ?>
 <h1>Profile</h1>
 
+<?php if ($user->profile_image) : ?>
+<img id="profile-image" src="<?= site_url('/profile/image') ?>" width="200" height="200" alt="Profile Image">
+
+<a href="<?= site_url("/profileimage/delete") ?>" class="btn btn-block">Delete profile image</a>
+<?php else : ?>
+<img id="profile-image" src="<?= site_url('/images/blank_picture.jpg') ?>" width="200" height="200" alt="Profile Image">
+<?php endif; ?>
 <dl>
     <dt>Name</dt>
     <dd><?= esc($user->name) ?></dd>

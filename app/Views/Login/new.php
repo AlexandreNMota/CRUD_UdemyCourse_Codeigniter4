@@ -24,6 +24,12 @@ Login
             <input type="password" name="password" class="form-control" placeholder="Informe a sua senha">
         </div>
 
+        <div class="form-group">
+            <label for="remember_me"></label>
+            <input type="checkbox" name="remember_me" id="remember_me "
+                <?php if (old('remember_me')) : ?>checked<?php endif; ?>> remember me
+        </div>
+
         <button class="btn btn-primary btn-block"
             style="background-image: linear-gradient(var(--primary), var(--mygray)); color:black; border:none;">Log
             in</button>
